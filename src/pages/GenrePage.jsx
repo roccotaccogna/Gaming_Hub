@@ -35,7 +35,7 @@ export default function GenrePage(){
     return (
         <>
         <AppSidebar/>
-        <div className="container mx-auto">
+        <div className="container mx-auto text-gray-400">
         <h1 className="text-6xl font-bold text-center capitalize">{genre} Games</h1>
         <p className="text-center">
         A videogame genre is a specific category of games related by similar gameplay characteristics. 

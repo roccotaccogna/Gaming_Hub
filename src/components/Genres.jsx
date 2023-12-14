@@ -5,18 +5,18 @@ export default function Genres({genres}){
 
     return (
         <>
-        <div className="dropdown">
-          <div tabIndex={0} className="btn m-1 text-xl font-semibold" role="button">
+        <div className="dropdown text-gray-400">
+          <div tabIndex={0} className="btn btn-ghost m-1 text-xl font-semibold" role="button">
             Genres
-            <IoIosArrowDown/>
+            <IoIosArrowDown className="bg-transparent"/>
           </div>
           <ul tabIndex={0} className="dropdown-content p-2 shadow
-                                      bg-base-200 rounded-box w-52 over"
+                                       rounded-box w-52 over"
           >
           {genres.map((genre) => {
             return (
             <li className="m-3 p-1 hover:bg-gray-700 hover:rounded-md" key={genre.id}>
-              <Link to={`/games/${genre.slug}`}>
+              <Link to={`/games/${genre.slug}`} className="bg-transparent">
                 {genre.name}
               </Link>
             </li>

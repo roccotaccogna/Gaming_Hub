@@ -143,7 +143,7 @@ export default function Details() {
         
             {loadingDetail &&  <Loading/> }
 
-               <h1 className="text-6xl font-bold text-center">{detailGames.name}</h1>
+               <h1 className="text-6xl font-bold text-center text-gray-400">{detailGames.name}</h1>
                <div className="detail lg:flex">
                 
                 {/* CONDITION IF NOT LOGIN */}
@@ -160,31 +160,34 @@ export default function Details() {
                 {profile && 
                 <>
                 <div className="imageDetail mb-12 xl:ml-16 lg:w-[800px] lg:ml-16
-                                md:w-[600px] md:ml-16 sm:w-[500px] sm:ml-16 min-w-[400px]"
+                                md:w-[600px] md:ml-16 sm:w-[500px] sm:ml-16 min-w-[340px]"
                 >
                <img src={detailGames.background_image} alt="image game" className="rounded-md" />
                 </div>
                <div className="md:ml-16 sm:ml-16 lg:ml-16 space">
                 <Messages profile={profile} game={detailGames}/>
 
-               <div className="containerChat">
-                <div className="nav-bar font-semibold uppercase text-white">
-                    <p>Chat live with gamers</p>
+               <div className="containerChat xl:w-[400px] lg:w-[400px] md:w-[400px] 
+                               sm:w-[400px] min-w-[250px] max-w-[400px]">
+                <div className="nav-bar font-semibold uppercase text-whit bg-transparent">
+                    <p className="bg-transparent text-white">Chat live with gamers</p>
                 </div>
 
                 <div className="sender-area">
-                    <div className="input-place">
-                        <form className="flex"
+                    <div className="input-place xl:w-[380px] lg:w-[380px] md:w-[380px] 
+                               sm:w-[380px] min-w-[250px] max-w-[380px]">
+                        <form className="flex bg-transparent"
                               onSubmit={handleMessageSubmit}>
                         <input 
                             type="text" 
                             name="message"
                             placeholder="type your message..."
-                            className="send-input"
+                            className="send-input bg-transparent"
                         />
-                        <div className="tooltip tooltip-right" data-tip="Send">
-                        <button>
-                        <IoMdSend size={26} className="ml-28 mt-2"/>
+                        <div className="tooltip tooltip-right bg-transparent" data-tip="Send">
+                        <button className="bg-transparent">
+                        <IoMdSend size={26} className="xl:ml-28 lg:ml-28 md:ml-28 sm:ml-28 ml-12
+                                                       mt-2 bg-transparent text-white"/>
                         </button>
                         </div>
                         </form>
@@ -207,7 +210,7 @@ export default function Details() {
                     onClick={removeFromFavourites}
                 >
                     Remove from Favourites
-                    <MdDelete size={30}/>
+                    <MdDelete size={48}/>
                 </button>
                ) : (
                 <button 
@@ -222,7 +225,7 @@ export default function Details() {
                <Link to={`/game/${detailGames.slug}/comment`}>
                <button className="review flex items-center">
                     Write a Review
-                    <FaPenAlt size={20} className="ml-1 mr-1"/>
+                    <FaPenAlt size={24} className="ml-1 mr-1"/>
                 </button>               
                </Link>
 
@@ -233,55 +236,49 @@ export default function Details() {
 
 
                 {/* RATINGS */}
-               <div className="stats shadow mt-4 ml-2 xl:ml-8 lg:ml-8 border-2 border-slate-600">
-                <div className="status">
-                    <div className="stat-figure text-white">
-                        <FaRegStar size={24} className="inline-block w-8 h-8 stroke-current"/>
-                    </div>
-                        <div className="font-semibold stat-title uppercase text-center">Ratings</div>
-                        <div className="stat-value text-slate-300">{detailGames.rating}</div>
-                </div>
+                <div className="flex mt-5 ml-3 xl:ml-8 lg:ml-8">
+               <FaRegStar size={28} className="mr-3 text-white min-w-[28px]"/>
+                <h2 className="uppercase font-semibold text-xl mr-4 text-white">Ratings:</h2>
+               <div className="text-xl text-gray-400">{detailGames.rating} / 5</div>
+               </div>
 
                 {/* RELEASE DATE */}
-               <div className="status">
-                <div className="stat-figure text-white">
-                    <FaRegClock size={24} className="inline-block w-8 h-8 stroke-current" />
-                </div>
-                <div className="font-semibold stat-title uppercase text-center">Release Date:</div>
-                <div className="stat-value text-slate-300">{detailGames.released}</div>
-               </div>
+               <div className="flex mt-5 ml-3 xl:ml-8 lg:ml-8">
+               <FaRegClock size={28} className="mr-3 text-white min-w-[28px]"/>
+                <h2 className="uppercase font-semibold text-xl mr-4 text-white">Release Date:</h2>
+               <div className="text-xl text-gray-400">{detailGames.released}</div>
                </div>
 
                {/* PLATFORMS */}
                <div className="flex mt-5 ml-3 xl:ml-8 lg:ml-8">
-               <RiComputerLine size={28} className="mr-3 text-white"/>
+               <RiComputerLine size={28} className="mr-3 text-white min-w-[28px]"/>
                 <h2 className="uppercase font-semibold text-xl mr-4 text-white">Platforms:</h2>
-               <div className="text-xl">{platforms.map(plat => plat).join(', ')}</div>
+               <div className="text-xl text-gray-400">{platforms.map(plat => plat).join(', ')}</div>
                </div>
 
                {/* PUBLISHERS */}
                <div className="flex mt-5 ml-3 xl:ml-8 lg:ml-8">
-               <TbWorld size={28} className="mr-3 text-white"/>
+               <TbWorld size={28} className="mr-3 text-white min-w-[28px]"/>
                 <h2 className="uppercase font-semibold text-xl mr-4 text-white">Publishers:</h2>
-               <div className="text-xl">{publishers}</div>
+               <div className="text-xl text-gray-400">{publishers}</div>
                </div>
 
                {/* GENRES */}
                <div className="flex mt-5 ml-3 xl:ml-8 lg:ml-8">
-               <BiBookmarks size={28} className="mr-3 text-white"/>
+               <BiBookmarks size={28} className="mr-3 text-white min-w-[28px]"/>
                 <h2 className="uppercase font-semibold text-xl mr-4 text-white">Genres:</h2>
-               <div className="text-xl">{genres.join(', ')}</div>
+               <div className="text-xl text-gray-400">{genres.join(', ')}</div>
                </div>
 
                {/* DEVELOPERS */}
                <div className="flex mt-5 ml-3 xl:ml-8 lg:ml-8">
-               <IoSettingsSharp size={28} className="mr-3 text-white"/>
+               <IoSettingsSharp size={28} className="mr-3 text-white min-w-[28px]"/>
                 <h2 className="uppercase font-semibold text-xl mr-4 text-white">Developers:</h2>
-               <div className="text-xl">{developers.join(', ')}</div>
+               <div className="text-xl text-gray-400">{developers.join(', ')}</div>
                </div>
 
                {/* ABOUT */}
-               <div className="container mx-auto mb-28">
+               <div className="container mx-auto mb-28 text-gray-400">
                <h5 className="text-center font-semibold text-4xl mt-9 uppercase">About</h5>
                <h6 className="text-center xl:mr-4">{detailGames.description_raw}</h6>
                </div>

@@ -4,7 +4,8 @@
     padding: 25px 35px;
     border: 2px solid white;
     margin-top: 5%;
-    height: 500px;
+    height: 550px;
+    width: 80%;
   }
   
   .form .input {
@@ -33,7 +34,7 @@
     transition: all 0.2s ease-in-out;
   }
   
-  .form .google-button {
+  .form .facebook-button {
     display: block;
     width: 70%;
     font-weight: bold;

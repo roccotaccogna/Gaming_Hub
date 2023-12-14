@@ -76,11 +76,11 @@ async function updateProfile(event, avatarUrl) {
                         before:rounded-full before:-z-10 before:blur-2xl after:w-32 
                         after:h-32 after:absolute after:bg-sky-400 after:rounded-full 
                         after:-z-10 after:blur-xl after:top-24 after:-right-12">
-        <h1 className="text-center font-bold text-3xl">Settings User Page</h1>
+        <h1 className="text-center font-bold text-3xl text-gray-400 bg-transparent">Settings User Page</h1>
 
-          <form onSubmit={updateProfile}>
-            <div className="mb-4">
-                <div className="rounded-full text-center" >
+          <form onSubmit={updateProfile} className="bg-transparent">
+            <div className="mb-4 bg-transparent">
+                <div className="rounded-full text-center bg-transparent">
                     <Avatar
                         url={avatar_url}
                         size={150}
@@ -89,9 +89,9 @@ async function updateProfile(event, avatarUrl) {
                 </div>
             </div>
 
-            <div className="mb-4">
+            <div className="mb-4 bg-transparent">
                 <label htmlFor="first_name"
-                       className="block text-sm font-medium text-gray-300">
+                       className="block text-sm font-medium text-gray-300 bg-transparent">
                     First Name
                 </label>
                 <input type="text"
@@ -104,9 +104,9 @@ async function updateProfile(event, avatarUrl) {
                 />
             </div>
 
-            <div className="mb-4">
+            <div className="mb-4 bg-transparent">
                 <label htmlFor="last_name"
-                       className="block text-sm font-medium text-gray-300">
+                       className="block text-sm font-medium text-gray-300 bg-transparent">
                     Last Name
                 </label>
                 <input type="text"
@@ -118,9 +118,9 @@ async function updateProfile(event, avatarUrl) {
                        onChange={(e) => setLastName(e.target.value)}
                 />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 bg-transparent">
                 <label htmlFor="email"
-                       className="block text-sm font-medium text-gray-300">
+                       className="block text-sm font-medium text-gray-300 bg-transparent">
                     Email
                 </label>
                 <input type="text"
@@ -130,9 +130,9 @@ async function updateProfile(event, avatarUrl) {
                        disabled
                 />
             </div>
-            <div className="mb-4">
+            <div className="mb-4 bg-transparent">
                 <label htmlFor="username"
-                       className="block text-sm font-medium text-gray-300">
+                       className="block text-sm font-medium text-gray-300 bg-transparent">
                     Username
                 </label>
                 <input type="text"
@@ -147,7 +147,7 @@ async function updateProfile(event, avatarUrl) {
             </div>
 
             
-            <div className="flex justify-end">
+            <div className="flex justify-end bg-transparent">
                 <button
                     className="bg-gradient-to-r from-purple-600 via-purple-400 
                              to-blue-500 text-white px-4 py-3 font-bold 
@@ -158,8 +158,8 @@ async function updateProfile(event, avatarUrl) {
                     {loading ? 'Loading...' : 'Update Profile'}
                 </button>
             </div>
-            <div className="flex justify-end mt-2">
-                <button className="btn btn-outline"
+            <div className="flex justify-end mt-2 bg-transparent ">
+                <button className="btn btn-outline text-gray-400"
                         type="button"
                         onClick={() => supabase.auth.signOut()}
                 >

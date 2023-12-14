@@ -77,9 +77,9 @@ function Login(){
     }
 
     return (
-        <div className="container_login mx-auto mb-60
+        <div className="container_login mx-auto
                         xl:w-[500px] lg:w-[500px] md:w-[450px] 
-                        sm:w-[400px] min-w-[170px]"
+                        sm:w-[400px]"
         >
             <div className="font-extrabold text-3xl text-white text-center">Login</div>
             
@@ -102,17 +102,17 @@ function Login(){
                                 Sign In
                     </button>
 
-                    <button className="google-button tracking-wide" 
+                    <button className="facebook-button tracking-wide" 
                             type="submit"
                             onClick={handleLoginWithFacebook}> 
-                                <FaFacebook className="w-auto sm:h-7 mr-1 inline-flex"/>
+                                <FaFacebook className="w-auto sm:h-7 mr-1 inline-flex bg-transparent"/>
                                 Login with Facebook
                     </button>
 
                     <button className="discord-button tracking-wide" 
                             type="submit" 
                             onClick={handleLoginWithDiscord}>
-                                <FaDiscord className="w-auto sm:h-7 mr-1 inline-flex"/>
+                                <FaDiscord className="w-auto sm:h-7 mr-1 inline-flex bg-transparent"/>
                                 Login with Discord
                     </button> 
                     

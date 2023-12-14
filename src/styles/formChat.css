@@ -1,6 +1,5 @@
 /* FORM CHAT */
 .containerChat {
-    width: 400px;
     height: 100px;
     background-color: #343541;
     border-radius: 0 0 8px 8px;
@@ -65,12 +64,12 @@
     display: flex;
     flex-direction: row;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 13px;
+    margin-right: 5px;
     align-items: center;
     background-color: #40414F;
     border-radius: 7px;
     height: 45px;
-    width: 380px;
     gap: 5px;
     border: 1px solid #2E2F3A;
   }

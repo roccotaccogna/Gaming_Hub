@@ -35,10 +35,10 @@ function Comments({ game }) {
                                         border-slate-200 col-span-6 resize-none outline-none 
                                           p-4 duration-300 focus:border-slate-600 m-2"
                              key={comment.id}>
-                                <p className="text-center font-semibold text-xl">{comment.comment_title}</p>
-                                <p className="text-lg">{comment.comment_content}</p>
-                                <p className="text-right italic mt-2">Published by: {comment.profile.username || comment.profile.email}</p>
-                                <p className="text-right italic">{formatMessageDate(comment.created_at)}</p>
+                                <p className="text-center font-semibold text-xl bg-transparent">{comment.comment_title}</p>
+                                <p className="text-lg bg-transparent">{comment.comment_content}</p>
+                                <p className="text-right italic mt-2 bg-transparent">Published by: {comment.profile.username || comment.profile.email}</p>
+                                <p className="text-right italic bg-transparent">{formatMessageDate(comment.created_at)}</p>
                         </div>
                      ))}
                     </div>
@@ -46,7 +46,7 @@ function Comments({ game }) {
 
             ) : (
                 <div className="mb-72">
-                    <p className="text-center italic text-xl"> There are not Review </p>
+                    <p className="text-center italic text-xl text-gray-400"> There are not Review </p>
                 </div>
             ) }
             </>

@@ -74,11 +74,13 @@ function Messages({ game }){
         }, []);
 
     return (
-        <div className="messages ml-4" ref={chatDivRef}>
+        <div className="messages xl:w-[400px] lg:w-[400px] md:w-[400px] sm:w-[400px]
+                        min-w-[250px] max-w-[400px]" 
+             ref={chatDivRef}>
         {chat && chat.map((message) => (
             <>
-                <div key={message.id} className="chat chat-start mt-2">
-                    <div className="chat-header text-lg text-white">
+                <div key={message.id} className="chat chat-start mt-2 bg-transparent">
+                    <div className="chat-header text-lg text-white bg-transparent">
                             {message.profile.username}
                         <time className="text-xs opacity-50 ml-1">
                             {formatMessageDate(message.created_at)} 

@@ -59,7 +59,7 @@ function Register(){
     return (
         <div className="container_register mx-auto
                         xl:w-[500px] lg:w-[500px] md:w-[450px] 
-                        sm:w-[400px] min-w-[170px"
+                        sm:w-[400px]"
         >
         <div className="font-extrabold text-3xl text-white text-center">Register</div>
             <Formik
@@ -111,7 +111,7 @@ function Register(){
                     </Form>
                 )}
               </Formik>
-            <div className="flex">
+            <div className="flex text-gray-400">
             <h4>Already have an account?</h4>
             <Link to="/login" className="ml-2 underline">Login</Link>
             </div>

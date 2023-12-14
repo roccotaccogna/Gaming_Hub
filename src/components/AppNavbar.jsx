@@ -29,36 +29,36 @@ export default function AppNavbar(){
           </Link>
 
           {session ? (
-            <div className='dropdown-content'>
+            <div className='dropdown-content mr-6'>
               <div className="dropdown">
-                <div tabIndex={0} className="btn m-1 text-lg text-white" role="button">
+                <div tabIndex={0} className="btn btn-ghost m-1 text-lg text-white bg-transparent border-none" role="button">
                   {session.user.user_metadata.username || session.user.email}           
                   <IoIosArrowDown/>
                 </div> 
-                 <ul className="menu shadow dropdown-content p-2 w-60 bg-base-200 text-white">
-                    <li className="text-lg">
-                      <Link to="/account" className="hover:text-white">
+                 <ul className="dropdown-content p-2 w-60 text-white">
+                    <li className="text-lg text-gray-400">
+                      <Link to="/account" className="hover:text-white flex">
                         <MdOutlineAccountCircle size={26} className="ml-1"/>
                         Account Page
                       </Link>
                     </li>
-                    <li className="text-lg">
-                      <Link to="/settings" className="hover:text-white">
+                    <li className="text-lg text-gray-400">
+                      <Link to="/settings" className="hover:text-white flex mt-2">
                         <CiSettings size={26} className="ml-1"/>
                         Settings Page
                       </Link>
                     </li>
                     <button onClick={handleSignOut} 
-                        className="cursor-pointer mt-1 mr-4 hover:text-red-500 uppercase text-lg" >
+                        className="cursor-pointer mt-2 ml-6 hover:text-red-500 uppercase text-lg" >
                           Sign out
                     </button>
                   </ul> 
               </div>
             </div>
           ): (
-              <ul className="menu menu-horizontal">
-                <li className="mr-1"><Link to="/login" className="uppercase hover:text-white">Login</Link></li>
-                <li><Link to="/register" className="uppercase hover:text-white">Register</Link></li>
+              <ul className="menu-horizontal">
+                <li className="mr-8"><Link to="/login" className="uppercase hover:text-white text-gray-400 text-sm">Login</Link></li>
+                <li><Link to="/register" className="uppercase hover:text-white text-gray-400 text-sm">Register</Link></li>
               </ul>
             )}
         </div>

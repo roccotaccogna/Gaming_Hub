@@ -69,11 +69,11 @@ function Account(){
 
     return (
         <div className="container mx-auto">
-            <h1 className="text-center font-bold text-3xl"> Benvenuto {profile.first_name || profile.username}</h1>
+            <h1 className="text-center font-bold text-3xl text-gray-400"> Benvenuto {profile.first_name || profile.username}</h1>
             <div className="mt-6 flex justify-center">
             <img  className="imageAvatar rounded-full w-48 h-48" src={getProfileAvatar(profile.avatar_url)} />              
             </div>
-            <div className="mx-auto list mt-14">
+            <div className="mx-auto list mt-14 text-gray-400">
             <div className="collapse collapse-arrow bg-slate-700 lg:w-[700px] xl:ml-44">
                 <input type="checkbox" name="my-accordion-2"/> 
                 <div className="collapse-title text-xl font-medium text-center">

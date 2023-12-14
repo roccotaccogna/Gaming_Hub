@@ -57,7 +57,7 @@ export default function Avatar({ url, size, onUpload }) {
   }
 
   return (
-    <div>
+    <div className="bg-transparent">
       {avatarUrl ? (        
           <img
             src={avatarUrl}
@@ -77,7 +77,7 @@ export default function Avatar({ url, size, onUpload }) {
           }}
         />
       )}
-      <div style={{ width: size }}>
+      <div style={{ width: size }} className="bg-transparent">
         <button
           type="button">
         </button>
@@ -87,7 +87,7 @@ export default function Avatar({ url, size, onUpload }) {
           accept="image/*"
           onChange={uploadAvatar}
           disabled={uploading}
-          className='mb-2'
+          className='mb-2 text-gray-400 bg-transparent'
         />
       </div>
     </div>

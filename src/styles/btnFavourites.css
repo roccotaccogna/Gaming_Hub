@@ -2,15 +2,15 @@
 .favourites {
     color: #1BFD9C;
     height: 50px;
-    width: 200px;
+    width: 170px;
     font-size: 15px;
-    padding: 0.2em 2.0em;
+    padding: 0.2em 1.7em;
     letter-spacing: 0.04em;
     position: relative;
     border-radius: 0.6em;
     overflow: hidden;
     transition: all 0.3s;
-    line-height: 1.4em;
+    line-height: 1.2em;
     border: 2px solid #1BFD9C;
     box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
   }
@@ -39,15 +39,15 @@
 .remove {
   color: #f13030;
   height: 50px;
-  width: 200px;
+  width: 170px;
   font-size: 15px;
-  padding: 0.2em 2.0em;
+  padding: 0.2em 1.7em;
   letter-spacing: 0.04em;
   position: relative;
   border-radius: 0.6em;
   overflow: hidden;
   transition: all 0.3s;
-  line-height: 1.4em;
+  line-height: 1.0em;
   border: 2px solid #f13030;
   box-shadow: inset 0 0 10px rgba(253, 27, 27, 0.4), 0 0 9px 3px rgba(253, 27, 27, 0.1);
 }
@@ -76,15 +76,15 @@
   .review {
     color: #3030f1;
     height: 50px;
-    width: 200px;
+    width: 170px;
     font-size: 15px;
-    padding: 0.2em 2.0em;
+    padding: 0.2em 1.7em;
     letter-spacing: 0.04em;
     position: relative;
     border-radius: 0.6em;
     overflow: hidden;
     transition: all 0.3s;
-    line-height: 1.4em;
+    line-height: 1.2em;
     border: 2px solid #3030f1;
     box-shadow: inset 0 0 10px rgba(65, 27, 253, 0.4), 0 0 9px 3px rgba(50, 27, 253, 0.1);
   }

@@ -41,9 +41,14 @@ export default function PlatformPage(){
      return (
       <>
         <AppSidebar/>
-        <div className="container mx-auto">
+        <div className="container mx-auto text-gray-400">
         <h1 className="text-6xl font-bold text-center"> {platformDetail.name} Games</h1>
-        <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quo.</p>
+        <p className="text-center">
+        Video games are developed to be played on a gaming platform that provides a player experience, 
+        which is usually comprised of client input controls, graphics, client software 
+        (known as the game client) and hardware, and in some cases platform-exclusive features
+        to support gameplay.
+        </p>
 
 
         {errorPlatform && <Error error={errorPlatform}/>}

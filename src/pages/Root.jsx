@@ -4,7 +4,7 @@ import AppFooter from '../components/AppFooter';
 
 function Root(){
     return (
-        <div className="container">
+        <div className=" relative min-h-[100vh]">
         <AppNavbar/>
         <AppLayout/>
         <AppFooter/>
