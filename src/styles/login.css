@@ -1,0 +1,66 @@
+/* LOGIN */
+.container_login {
+    border-radius: 40px;
+    padding: 25px 35px;
+    border: 2px solid white;
+    margin-top: 5%;
+    height: 500px;
+  }
+  
+  .form .input {
+    width: 100%;
+    background: white;
+    color: black;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+  
+  .form .input::after{
+    background: white;
+  }
+  
+  .form .login-button {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    color: white;
+    padding-block: 15px;
+    margin: 25px auto;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form .google-button {
+    display: block;
+    width: 70%;
+    font-weight: bold;
+    background: #e7e7e7;
+    color: black;
+    padding-block: 10px;
+    margin: 20px auto;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form .discord-button {
+    display: block;
+    width: 70%;
+    font-weight: bold;
+    background: #e7e7e7;
+    color: black;
+    padding-block: 10px;
+    margin: 20px auto;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form .login-button:hover {
+    transform: scale(1.03);
+  }
+  
+  .form .login-button:active {
+    transform: scale(0.95);
+  }

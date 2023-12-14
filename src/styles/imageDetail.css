@@ -1,0 +1,12 @@
+/* IMAGE DETAILS*/
+.detail {
+    text-align: center;
+    margin-top: 3%;
+    width: 100%;
+  }
+
+  .imageDetail {
+    width: 60%;
+    margin-right: 3%;
+    margin-left: 5%;
+  }
