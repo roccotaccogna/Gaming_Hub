@@ -31,28 +31,28 @@ export default function AppNavbar(){
           {session ? (
             <div className='dropdown-content mr-6'>
               <div className="dropdown">
-                <div tabIndex={0} className="btn btn-ghost m-1 text-lg text-white bg-transparent border-none" role="button">
+                <div tabIndex={0} className="btn btn-ghost m-1 text-lg text-white bg-transparent border-none no-underline" role="button">
                   {session.user.user_metadata.username || session.user.email}           
                   <IoIosArrowDown/>
                 </div> 
-                 <ul className="dropdown-content p-2 w-60 text-white">
-                    <li className="text-lg text-gray-400">
+                 <div className="dropdown-content p-2 w-60 text-white">
+                    <div className="text-lg text-gray-400">
                       <Link to="/account" className="hover:text-white flex">
                         <MdOutlineAccountCircle size={26} className="ml-1"/>
                         Account Page
                       </Link>
-                    </li>
-                    <li className="text-lg text-gray-400">
+                    </div>
+                    <div className="text-lg text-gray-400">
                       <Link to="/settings" className="hover:text-white flex mt-2">
                         <CiSettings size={26} className="ml-1"/>
                         Settings Page
                       </Link>
-                    </li>
+                    </div>
                     <button onClick={handleSignOut} 
                         className="cursor-pointer mt-2 ml-6 hover:text-red-500 uppercase text-lg" >
                           Sign out
                     </button>
-                  </ul> 
+                  </div> 
               </div>
             </div>
           ): (
