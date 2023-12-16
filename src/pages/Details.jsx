@@ -149,7 +149,7 @@ export default function Details() {
                 {/* CONDITION IF NOT LOGIN */}
                 {!profile && 
                 <div className="lg:w-[800px] mb-12 md:w-[600px] sm:w-[500px] 
-                                xl:ml-48 lg:ml-24 2xl:ml-60"
+                                xl:ml-48 lg:ml-24 2xl:ml-[350px]"
                 >
                <img src={detailGames.background_image} alt="image game" className="rounded-md" />
                 </div>
@@ -210,7 +210,7 @@ export default function Details() {
                     onClick={removeFromFavourites}
                 >
                     Remove from Favourites
-                    <MdDelete size={48}/>
+                    <MdDelete size={48} className="min-w-[16px]"/>
                 </button>
                ) : (
                 <button 
@@ -219,13 +219,13 @@ export default function Details() {
                     onClick={addToFavourites}
                 >
                     Add to Favourites
-                    <FaRegHeart size={25}/>
+                    <FaRegHeart size={25} className="min-w-[16px]"/>
                 </button>
                )}
                <Link to={`/game/${detailGames.slug}/comment`}>
                <button className="review flex items-center">
                     Write a Review
-                    <FaPenAlt size={24} className="ml-1 mr-1"/>
+                    <FaPenAlt size={24} className="ml-[3px] mr-[2px]"/>
                 </button>               
                </Link>
 

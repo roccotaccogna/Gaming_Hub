@@ -138,3 +138,11 @@
 .btn:disabled {
   color: #4b5563;
 }
+
+.comment1{
+  height: 700px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 10px;
+  margin: 0;
+}

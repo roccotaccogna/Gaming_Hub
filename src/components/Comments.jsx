@@ -29,6 +29,7 @@ function Comments({ game }) {
                                        font-bold col-span-6 mt-2 italic mb-12">
                                             {game.name} Reviews
                         </h1>
+                        <div className="comment1">
                     {comments.map((comment) => (
                         <div className="bg-slate-500 text-black ml-2 lg:w-[900px] xl:w-[1000px] 
                                         placeholder:text-slate-600 placeholder:opacity-50 border 
@@ -41,6 +42,7 @@ function Comments({ game }) {
                                 <p className="text-right italic bg-transparent">{formatMessageDate(comment.created_at)}</p>
                         </div>
                      ))}
+                        </div>
                     </div>
                 </div>
 

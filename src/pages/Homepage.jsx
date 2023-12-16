@@ -62,7 +62,7 @@ const [pagination, setPagination] = useState(1);
         
         {loading && <Loading/>}
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 my-8 sm:grid-cols-2">
                 {games && games.map((game) => ( 
                     <Card key={game.id} game={game}/>
                ))}      

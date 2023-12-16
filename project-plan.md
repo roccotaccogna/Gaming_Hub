@@ -59,4 +59,4 @@ l'API Web scelta:
 
 ## Deployment
 
-* Sostituiscilo con un collegamento a dove distribuirai l'app
+* https://gaming-hub-roccotaccognas-projects.vercel.app/

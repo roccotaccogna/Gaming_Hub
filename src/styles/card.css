@@ -2,25 +2,13 @@
 
 .card1 {
   border-radius: 8px;
-}
-
-.card1::after {
-  content: "";
-  z-index: -1;
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
-  transform: translate3d(0, 0, 0) scale(0.95);
-  filter: blur(15px);
-}
-
-.card1:hover::after {
-  filter: blur(20px);
-}
+  box-shadow: rgba(180, 65, 252, 0.472) 20px 15px 30px -5px;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  }
 
 .card1-action {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem/* 8px */;
+  gap: 0.5rem;
 }

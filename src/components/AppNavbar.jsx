@@ -33,26 +33,26 @@ export default function AppNavbar(){
               <div className="dropdown">
                 <div tabIndex={0} className="btn btn-ghost m-1 text-lg text-white bg-transparent border-none no-underline" role="button">
                   {session.user.user_metadata.username || session.user.email}           
-                  <IoIosArrowDown/>
+                  <IoIosArrowDown className="bg-transparent"/>
                 </div> 
-                 <div className="dropdown-content p-2 w-60 text-white">
-                    <div className="text-lg text-gray-400">
-                      <Link to="/account" className="hover:text-white flex">
+                 <ul className="dropdown-content p-2 w-60 text-white">
+                    <li className="text-lg text-gray-400">
+                      <Link to={{ pathname:"/account" }} className="hover:text-white flex">
                         <MdOutlineAccountCircle size={26} className="ml-1"/>
                         Account Page
                       </Link>
-                    </div>
-                    <div className="text-lg text-gray-400">
-                      <Link to="/settings" className="hover:text-white flex mt-2">
+                    </li>
+                    <li className="text-lg text-gray-400">
+                      <Link to={{ pathname:"/settings" }} className="hover:text-white flex mt-2">
                         <CiSettings size={26} className="ml-1"/>
                         Settings Page
                       </Link>
-                    </div>
+                    </li>
                     <button onClick={handleSignOut} 
                         className="cursor-pointer mt-2 ml-6 hover:text-red-500 uppercase text-lg" >
                           Sign out
                     </button>
-                  </div> 
+                  </ul> 
               </div>
             </div>
           ): (
