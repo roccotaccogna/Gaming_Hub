@@ -2,8 +2,6 @@
 
 .card1 {
   border-radius: 8px;
-  box-shadow: rgba(180, 65, 252, 0.472) 20px 15px 30px -5px;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
   }
 
 .card1-action {
