@@ -21,10 +21,9 @@ l'API Web scelta:
    * [x] Supabase
 
 ## Styling Solution o Component Library
-
-* https://tailwindcss.com/
-
-* https://daisyui.com/
+* CSS3
+* Tailwind CSS: https://tailwindcss.com/
+* Daisy UI: https://daisyui.com/
 
 ## Pages
 
@@ -51,11 +50,7 @@ l'API Web scelta:
 
 ## Context API
 
-- users
-- session
-- favourites
-- comments
-- messages
+- Utenti loggati possono condividere dati all'interno dell'applicazione.
 
 ## Deployment
 
